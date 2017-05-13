@@ -7,7 +7,7 @@ REPLACE INTO `{PREFIX}site_content` (`id`, `type`, `contentType`, `pagetitle`, `
 TRUNCATE TABLE `{PREFIX}site_templates`;
 
 REPLACE INTO `{PREFIX}site_templates` (`id`, `templatename`, `description`, `editor_type`, `category`, `icon`, `template_type`, `content`, `locked`, `selectable`) VALUES
-(1, 'main', '', 0, 0, '', 0, '{{header}}\n<div class=\"container\">\n	<div class=\"user-content\">\r\n		[*content*]\r\n	</div>\r\n	[[share]]\r\n</div>\r\n{{footer}}', 0, 1),
+(1, 'main', '', 0, 0, '', 0, '{{header}}\r\n<div class=\"container\">\r\n	<div class=\"user-content\">\r\n		[*content*]\r\n	</div>\r\n	[[share]]\r\n</div>\r\n{{footer}}', 0, 1),
 (2, 'info', '', 0, 0, '', 0, '{{header}}\r\n<div class=\"container\">\r\n	<div class=\"user-content\">\r\n		[*content*]\r\n	</div>\r\n	[[share]]\r\n</div>\r\n{{footer}}', 0, 1);
 
 
