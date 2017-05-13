@@ -1,0 +1,7 @@
+{
+	"parents":          1,
+	"maxDepth":         2,
+	"TplMainOwner":     "@CODE: <ul class=\"main\">[+dl.wrap+]</ul>",
+	"TplOneItem":       "@CODE: <li class=\"category-menu-item [+dl.class+]\"><a href=\"[+url+]\" title=\"[+e.title+]\">[+title+]</a>[+dl.submenu+]</li>",
+	"noChildrenRowTPL": "@CODE: <li class=\"[+dl.class+]\"><a href=\"[+url+]\" title=\"[+e.title+]\">[+title+]</a>[+dl.submenu+]</li>"
+}
