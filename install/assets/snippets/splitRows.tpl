@@ -1,6 +1,8 @@
 ﻿/**
  * splitRows
- *
+ * 
+ * formats every row with tpl
+ * 
  * @category    snippet
  * @internal    @properties
  * @internal    @installset sample
