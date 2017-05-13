@@ -1,6 +1,8 @@
 ﻿/**
  * formatPrice
- *
+ * 
+ * format price
+ * 
  * @category    snippet
  * @internal    @properties
  * @internal    @installset sample

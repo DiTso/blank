@@ -1,6 +1,8 @@
 ﻿/**
  * formatDate
- *
+ * 
+ * format Date
+ * 
  * @category    snippet
  * @internal    @properties
  * @internal    @installset sample

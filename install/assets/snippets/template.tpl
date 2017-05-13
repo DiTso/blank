@@ -1,6 +1,8 @@
 ﻿/**
  * template
- *
+ * 
+ * Выводит название текущего шаблона
+ * 
  * @category    snippet
  * @internal    @properties
  * @internal    @installset sample

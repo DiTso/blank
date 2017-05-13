@@ -1,6 +1,8 @@
 /**
  * header
  * 
+ * sample header
+ * 
  * @category	chunk
  * @internal    @overwrite true
  * @internal    @installset sample

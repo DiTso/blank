@@ -1,6 +1,8 @@
 ﻿/**
  * share
- *
+ * 
+ * share
+ * 
  * @category    snippet
  * @internal    @properties
  * @internal    @installset sample

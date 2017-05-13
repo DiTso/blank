@@ -1,6 +1,8 @@
 ﻿/**
  * cleanPhone
- *
+ * 
+ * Удаление из телефона всего кроме цифр
+ * 
  * @category    snippet
  * @internal    @properties
  * @internal    @installset sample

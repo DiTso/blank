@@ -1,6 +1,8 @@
 /**
  * footer
  * 
+ * sample footer
+ * 
  * @category	chunk
  * @internal    @overwrite true
  * @internal    @installset sample
