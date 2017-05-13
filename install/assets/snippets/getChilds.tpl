@@ -6,6 +6,7 @@
  *
  * @category 	snippet
  * @version 	1.0
+ * @internal    @installset sample
  * @internal	@modx_category Content
  */
  

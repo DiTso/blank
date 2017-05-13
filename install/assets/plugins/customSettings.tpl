@@ -9,6 +9,7 @@
  * @author      kassim
  * @internal    @events OnSiteSettingsRender 
  * @internal    @modx_category Manager and Admin
+ * @internal    @installset sample
  */
  
 // 
