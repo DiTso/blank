@@ -56,28 +56,35 @@ if ( $e->name == 'OnSiteSettingsRender' ) {
 			'type'  => 'textarea',
 			'style' => 'width: 350px;',
 		),
-		/*array(
+		array(
 			'title' => 'Социальные сети',
 			'subtitle' => 'Если какая-либо ссылка не заполнена - она не будет показываться. Также отображение должно быть предусмотрено в шаблоне.',
 		),
-		'social_ig' => array(
-			'title' => 'Instagram',
-			'type'  => 'text',
-			'note'  => 'Ссылка полностью на профиль Instagram',
-			'style' => 'width: 350px;',
-		),
-		'social_vk' => array(
-			'title' => 'ВКонтакте',
-			'type'  => 'text',
-			'note'  => 'Ссылка полностью на группу или профиль ВКонтакте',
-			'style' => 'width: 350px;',
-		),
-		'social_fb' => array(
+		'social_facebook' => array(
 			'title' => 'Facebook',
 			'type'  => 'text',
-			'note'  => 'Ссылка полностью на профиль Facebook',
 			'style' => 'width: 350px;',
-		),*/
+		),
+		'social_vkontakte' => array(
+			'title' => 'ВКонтакте',
+			'type'  => 'text',
+			'style' => 'width: 350px;',
+		),
+		'social_instagram' => array(
+			'title' => 'Instagram',
+			'type'  => 'text',
+			'style' => 'width: 350px;',
+		),
+		'social_youtube' => array(
+			'title' => 'Youtube',
+			'type'  => 'text',
+			'style' => 'width: 350px;',
+		),
+		'social_odnoklassniki' => array(
+			'title' => 'Одноклассники',
+			'type'  => 'text',
+			'style' => 'width: 350px;',
+		),
 		array(
 			'title' => 'Данные для получения заявок',
 		),
@@ -182,6 +189,4 @@ if ( $e->name == 'OnSiteSettingsRender' ) {
 	$output .= '<tr><td>';
 }
 $e->output( $output );
-
-
 
