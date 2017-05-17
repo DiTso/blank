@@ -88,7 +88,7 @@ a, a > i { transition: all 0.15s ease; }
 }
 
 /* xs */
-@media (max-width: 575px) {
+@media (max-width: 576px) {
 
 }
 
@@ -97,7 +97,7 @@ a, a > i { transition: all 0.15s ease; }
 }
 
 /* sm, md, lg, xl */
-@media ( min-width: 576px ) {
+@media ( min-width: 577px ) {
 
 }
 
