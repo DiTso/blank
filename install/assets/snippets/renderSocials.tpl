@@ -1,7 +1,7 @@
 ﻿/**
- * formatPrice
+ * renderSocial
  * 
- * format price
+ * snippet for render social links
  * 
  * @category    snippet
  * @internal    @properties

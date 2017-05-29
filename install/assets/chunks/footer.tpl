@@ -17,13 +17,7 @@
 					<div class="copy">
 						© [!year!] Все права защищены.
 					</div>
-					<div class="socials">
-						<a href="[(social_fb)]" target="_blank" rel="nofollow" title="Facebook" class="icon-social-facebook"></a>
-						<a href="[(social_vk)]" target="_blank" rel="nofollow" title="Вконтакте" class="icon-social-vk"></a>
-						<a href="[(social_ig)]" target="_blank" rel="nofollow" title="Instagram" class="icon-social-instagram"></a>
-						<a href="[(social_yt)]" target="_blank" rel="nofollow" title="YouTube" class="icon-social-youtube"></a>
-						<a href="[(social_ok)]" target="_blank" rel="nofollow" title="Одноклассники" class="icon-social-odnoklassniki"></a>
-					</div>
+					[[renderSocials]]
 				</div>
 				<div class="col-md-8 col-lg-9">
 					<div class="row">
