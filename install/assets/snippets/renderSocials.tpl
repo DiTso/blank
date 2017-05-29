@@ -1,5 +1,5 @@
 ﻿/**
- * renderSocial
+ * renderSocials
  * 
  * snippet for render social links
  * 
