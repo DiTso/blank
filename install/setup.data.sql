@@ -33,3 +33,17 @@ UPDATE `{PREFIX}system_settings` SET setting_value = '2' WHERE setting_name = 'd
 UPDATE `{PREFIX}system_settings` SET setting_value = 'sibling' WHERE setting_name = 'auto_template_logic';
 
 UPDATE `{PREFIX}system_settings` SET setting_value = 'MODxRE2_DropdownMenu' WHERE setting_name = 'manager_theme';
+
+UPDATE `{PREFIX}system_settings` SET setting_value = '/' WHERE setting_name = 'friendly_url_suffix';
+
+UPDATE `{PREFIX}system_settings` SET setting_value = 'YYYY-mm-dd' WHERE setting_name = 'datetime_format';
+
+UPDATE `{PREFIX}site_plugins` SET disabled = '0' WHERE name = 'ElementsInTree';
+
+
+
+
+
+
+
+
