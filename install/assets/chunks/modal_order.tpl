@@ -11,7 +11,7 @@
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<form method="post" action="#" data-id="2" class="ajax">
-				<button type="button" class="close icon-cancel" data-dismiss="modal"></button>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
 				<div class="modal-title">Сделать заказ</div>
 				<div class="modal-body">
 					<div class="form-group">
