@@ -62,8 +62,8 @@
 		<div class="modal fade" tabindex="-1" role="dialog" id="response">
 			<div class="modal-dialog">
 				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					<div class="modal-body">
-						<button type="button" class="close icon-cancel" data-dismiss="modal"></button>
 						<div class="response"></div>
 					</div>
 				</div>
