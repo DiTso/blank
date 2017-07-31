@@ -33,7 +33,7 @@
 							<a href="/"><img src="/assets/templates/default/images/logo.png" class="img-fluid"></a>
 						</div>
 
-						<div class="float-left show-on-top hidden-md-down text">
+						<div class="pull-xs-left show-on-top hidden-md-down text">
 							[[nl2br? &in=`[(head_text)]`]]
 						</div>
 					</div>
