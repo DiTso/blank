@@ -23,7 +23,7 @@
 					<div class="row">
 						<div class="col-6 col-md-6 col-lg-7 col-xl-9 hidden-xs-down">
 							<div class="bottom-menu">
-								[[DLBuildMenu? 
+								[[DLMenu? 
 									&config=`menu`
 								]]
 							</div>
