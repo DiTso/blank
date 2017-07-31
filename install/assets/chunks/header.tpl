@@ -52,7 +52,7 @@
 			<div class="head-menu">
 				<div class="container">
 					<div class="menu">
-						[[DLBuildMenu? 
+						[[DLMenu? 
 							&config=`menu`
 						]]
 					</div>
