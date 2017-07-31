@@ -17,7 +17,7 @@
  * custom Template
  *
  * Written By Dmi3yy - 13 Sep 2011
- * Modified by sunhaim - 20 Apr 2017
+ * Modified by sunhaim - 31 Jul 2017
  *
  * Когда у нас древовидная структура сайта и нужно добавлять не только документы но и ветки документов (классический пример: каталог товаров)
  * то нужно делать лишние движения по выбору шаблона, при наполнении сайта. 
@@ -26,7 +26,7 @@
  * указав нужную наследственность шаблонов.
  * 
  * Выставляем событие для плагина: OnDocFormPrerender
- * В настройках пишем: &customTemplates=customTemplates;text;t100,101|p102,103
+ * В настройках пишем: &customTemplates=customTemplates;text;t100,101|p102,103|p34,76,77,78
  * 
  * и далее заменяем значение по логике: 
  * Номер шаблона Папки или идентификатор Папки, Номер шаблона Документа или идентификатор Папки|Номер шаблона Папки, Номер шаблона Документа или идентификатор Папки|Номер шаблона Папки, Номер шаблона Документа
@@ -38,20 +38,40 @@
 
 	$parts = explode( '|', $customTemplates );
 
-	switch($e->name) {
+	switch ( $e->name ) {
 		case 'OnDocFormPrerender':
-			if ( isset( $_REQUEST['pid'] ) && $parent = $modx->getPageInfo( $_REQUEST['pid'], 0, 'id,template' ) ) {
-				foreach ( $parts as $pair ) {
-					$pair = explode( ',', $pair );
-					$key  = 'template';
+			if ( isset( $_REQUEST['pid'] ) ) {
+				$parents = [];
+				
+				foreach ( $parts as $series ) {
+					$serie     = explode( ',', $series );
+					$template  = array_pop( $serie );
+					$parent_id = $_REQUEST['pid'];
+					$match     = true;
+				
+					do {
+						$current = array_pop( $serie );
+						$key     = $current[0] == 'p' ? 'id' : 'template';
+						
+						if ( isset( $parents[ $parent_id ] ) ) {
+							$parent = $parents[ $parent_id ];
+						} else {
+							$parent = $modx->getPageInfo( $parent_id, 0, 'id,template,parent' );
+							$parents[ $parent_id ] = $parent;
+						}
+						
+						$parent_id = $parent['parent'];
+						
+						if ( $parent[$key] != ltrim( $current, 'pt' ) ) {
+							$match = false;
+							break;
+						} 
+					} while ( count( $serie ) );
 					
-					if ( $pair[0][0] == 'p' ) {
-						$key = 'id';
+					if ( $match ) {
+						$content['template'] = $template;	
+						break;
 					}
-					
-					if ( $parent[$key] == ltrim( $pair[0], 'pt' ) ) {
-						$content['template'] = $pair[1];
-					} 
 				}   
 			}
 			break;
@@ -59,4 +79,3 @@
 		default:
 			break;
 	}
-	
