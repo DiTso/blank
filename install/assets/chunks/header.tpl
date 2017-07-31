@@ -34,7 +34,7 @@
 						</div>
 
 						<div class="float-left show-on-top hidden-md-down text">
-							[(head_text:addbreak)]
+							[[nl2br? &in=`[(head_text)]`]]
 						</div>
 					</div>
 
