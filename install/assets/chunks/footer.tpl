@@ -13,45 +13,45 @@
 	<div class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-md-4 col-lg-3">
+				<div class="col-sm-3">
 					<div class="copy">
 						© [!year!] Все права защищены.
 					</div>
+					
 					[[renderSocials]]
 				</div>
-				<div class="col-md-8 col-lg-9">
+
+				<div class="col-sm-9">
 					<div class="row">
-						<div class="col-6 col-md-6 col-lg-7 col-xl-9 hidden-xs-down">
-							<div class="bottom-menu">
-								[[DLMenu? 
-									&config=`menu`
-								]]
-							</div>
+						<div class="bottom-menu">
+							[[DLMenu? 
+								&config=`menu`
+							]]
 						</div>
-						<div class="col-12 col-sm-6 col-lg-5 col-xl-3">
-							<div class="wi-group phone">
-								<i class="icon-phone"></i>
-								[[splitRows? &in=`[(company_phone)]` &tpl=`phones`]]
-								<a href="#" class="callback" data-toggle="modal" data-target="#callback">Заказать звонок</a>
-							</div>
-							<div class="wi-group">
-								<i class="icon-location"></i>
-								[(company_address)]
-							</div>
-							<div class="wi-group">
-								<a href="mailto:[(company_email)]">
-									<i class="icon-email"></i>
-									[(company_email)]
-								</a>
-							</div>
+
+						<div class="wi-group phone">
+							<i class="icon-phone"></i>
+							[[splitRows? &in=`[(company_phone)]` &tpl=`phones`]]
+							<a href="#" class="callback" data-toggle="modal" data-target="#callback">Заказать звонок</a>
+						</div>
+
+						<div class="wi-group">
+							<i class="icon-location"></i>
+							[(company_address)]
+						</div>
+
+						<div class="wi-group">
+							<a href="mailto:[(company_email)]">
+								<i class="icon-email"></i>
+								[(company_email)]
+							</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 hidden-md-up">
-					<div class="copy last">
-						© [!year!] Все права защищены.
-					</div>
-				</div>
+			</div>
+			
+			<div class="policy text-xs-center">
+				<a href="[[DocInfo? &field=`policy` &docid=`2`]]"></a>
 			</div>
 		</div>
 	</div>
