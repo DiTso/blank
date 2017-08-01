@@ -36,6 +36,10 @@ UPDATE `{PREFIX}system_settings` SET setting_value = '/' WHERE setting_name = 'f
 
 UPDATE `{PREFIX}system_settings` SET setting_value = 'YYYY-mm-dd' WHERE setting_name = 'datetime_format';
 
+UPDATE `{PREFIX}system_settings` SET setting_value = 'undo redo | cut copy paste | searchreplace | fontsizeselect | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent blockquote | forecolor backcolor | styleselect' WHERE setting_name = 'tinymce4_custom_buttons1';
+
+UPDATE `{PREFIX}system_settings` SET setting_value = 'advlist autolink lists link image charmap print preview hr anchor pagebreak searchreplace wordcount visualblocks visualchars code fullscreen spellchecker insertdatetime media nonbreaking save table contextmenu directionality emoticons template paste textcolor codesample colorpicker textpattern imagetools paste modxlink youtube' WHERE setting_name = 'tinymce4_custom_plugins';
+
 UPDATE `{PREFIX}site_plugins` SET disabled = '0' WHERE name = 'ElementsInTree';
 
 
