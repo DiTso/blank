@@ -43,7 +43,7 @@ ul.items > li { margin: 0; padding: 0; display: inline-block; vertical-align: to
 .user-content .justifyright { float: right; margin: 0 0 10px 10px; }
 .user-content .justifyleft { float: left; margin: 0 10px 10px 0; }
 
-a, a > i { transition: all 0.15s ease; }
+a { transition: all 0.15s ease; }
 
 .wi-group { position: relative; padding-left: 1.7rem; }
 .wi-group i { position: absolute; left: 0; top: 0; font-size: 120%; }
