@@ -8,6 +8,7 @@
 		$('.slick').slick( {
 			prevArrow: '<a href="#" class="ctrl prev"><i class="icon-left-arrow"></i></a>', 
 			nextArrow: '<a href="#" class="ctrl next"><i class="icon-right-arrow"></i></a>',
+			swipeToSlide: true,
 			customPaging: function() {
 				return '<span></span>';
 			}
