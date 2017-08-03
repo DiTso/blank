@@ -11,10 +11,8 @@ body.modal-open { overflow: hidden !important; }
 .modal .close { position: absolute; right: 0; top: 0; width: 2.5rem; text-align: center; height: 2.5rem; font-size: 2rem; }
 .modal .modal-content { border-radius: 0; border: 0; box-shadow: 0 10px 15px -5px rgba(0,0,0,0.3); }
 .modal .modal-dialog { display: inline-block; text-align: left; vertical-align: middle; max-width: 24rem; width: 24rem; }
-.modal .modal-header { border: 0; color: #333; text-align: left; font-weight: bold; font-size: 1.4rem; line-height: 1; padding: 2rem 2rem; }
 .modal .modal-body { margin: 0; padding: 2rem 0; }
-.modal .modal-body .form-group { margin-bottom: 1.3rem;  }
-.modal .modal-body .btn { margin-top: 0.5rem;  }
+.modal .modal-body .btn { margin-top: 0.5rem; }
 
 .modal#response { font-size: 1rem; }
 .modal#response .modal-dialog { width: auto; max-width: 24rem; }
@@ -29,7 +27,9 @@ ul.items { margin: 0; padding: 0; list-style: none; }
 ul.items > li { margin: 0; padding: 0; display: inline-block; vertical-align: top; }
 
 .form-group { margin: 0 0 1rem; }
-.form-group .form-control { border-radius: 0; border: 0.15rem solid #fff; background: transparent; color: #fff; font-size: 1.43rem; font-weight: 500; text-transform: uppercase; text-align: center; }
+.form-group .form-control { border-radius: 0; border: 0.1rem solid #ccc; background: transparent; }
+.form-group.file-upload input { display: none; }
+.form-group.file-upload label { cursor: pointer; margin: 0; white-space: nowrap; max-width: 100%; overflow: hidden; }
 
 .form-group { position: relative; }
 .form-group .notice { position: absolute; margin-left: -100%; width: 100%; text-align: right; top: 50%; z-index: 701; pointer-events: none; transition: all 0.3s cubic-bezier(.17,.67,.08,1); transform: translate(-50px,0); opacity: 0; }
