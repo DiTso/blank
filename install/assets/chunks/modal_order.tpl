@@ -26,6 +26,13 @@
 						<input type="text" name="email" class="form-control" placeholder="Email *">
 					</div>
 					
+					<div class="form-group file-upload">
+						<label>
+							<input type="file" name="file" onchange="this.nextElementSibling.innerHTML = this.value">
+							<span class="filename">Прикрепить файл</span>
+						</label>
+					</div>
+					
 					<div class="text-xs-right">
 						<button type="submit" class="btn btn-theme">Отправить</button>
 					</div>
