@@ -35,7 +35,7 @@ ul.items > li { margin: 0; padding: 0; display: inline-block; vertical-align: to
 .form-group .notice { position: absolute; margin-left: -100%; width: 100%; text-align: right; top: 50%; z-index: 701; pointer-events: none; transition: all 0.3s cubic-bezier(.17,.67,.08,1); transform: translate(-50px,0); opacity: 0; }
 .form-group .notice > div { line-height: 1; font-size: 11px; color: #fff; background: #c00; padding: 8px; border-radius: 3px; display: inline-block; text-align: left; margin-right: 10px; position: relative; }
 .form-group .notice > div:after { content: ''; position: absolute; right: -10px; top: 50%; border: 5px solid transparent; border-left-color: #c00; margin-top: -5px; }
-.form-group .notice.from-top { text-align: left; left: 3px; top: 0; margin-left: 0; transform: translate(0,50px); }
+.form-group .notice.from-top { text-align: left; left: 3px; top: 0; margin-left: 0; transform: translate(0,20px); }
 .form-group .notice.from-top > div:after { border-color: transparent; border-top-color: #c00; margin: 0; right: auto; top: auto; bottom: -10px; left: 10px; }
 .form-group .notice.animated { transform: none; opacity: 1; }
 
