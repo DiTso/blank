@@ -18,7 +18,7 @@ body.modal-open { overflow: hidden !important; }
 
 .modal#response { font-size: 1rem; }
 .modal#response .modal-dialog { width: auto; max-width: 24rem; }
-.modal#response .modal-body { padding: 2rem; text-align: center; width: auto; }
+.modal#response .modal-body { padding: 0; text-align: center; width: auto; }
 .modal#response .modal-body .response > :last-child { margin-bottom: 0; }
 
 .slick .slick-list { position: relative; display: block; overflow: hidden; margin: 0; padding: 0; }
