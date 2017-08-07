@@ -49,10 +49,6 @@ a { transition: all 0.15s ease; }
 
 .btn { transition: all 0.2s ease; font: 16px/1.2 Arial, "Helvetica CY", "Nimbus Sans L", sans-serif; font-size: 1rem; cursor: pointer; outline: none !important; }
 
-.slick .slick-list { position: relative; display: block; overflow: hidden; margin: 0; padding: 0; }
-.slick .slide { float: left; height: 100%; min-height: 1px; }
-.slick-hidden { display: none; }
-
 .form-content { padding: 2rem; }
 .form-content .form-title { font-weight: bold; font-size: 1.5rem;}
 
