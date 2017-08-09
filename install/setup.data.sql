@@ -1,8 +1,8 @@
-REPLACE INTO `{PREFIX}site_content` (`id`, `type`, `contentType`, `pagetitle`, `longtitle`, `description`, `alias`, `link_attributes`, `published`, `pub_date`, `unpub_date`, `parent`, `isfolder`, `introtext`, `content`, `richtext`, `template`, `menuindex`, `searchable`, `cacheable`, `createdby`, `createdon`, `editedby`, `editedon`, `deleted`, `deletedon`, `deletedby`, `publishedon`, `publishedby`, `menutitle`, `donthit`, `haskeywords`, `hasmetatags`, `privateweb`, `privatemgr`, `content_dispo`, `hidemenu`, `alias_visible`) VALUES
-(1, 'document', 'text/html', 'Контент', '', '', 'content', '', 1, 0, 0, 0, 1, '', '', 1, 0, 0, 1, 1, 1, 1130304721, 1, 1493893986, 0, 0, 0, 1130304721, 1, '', 0, 0, 0, 0, 0, 0, 1, 0),
-(2, 'document', 'text/html', 'Главная', 'О компании', '', 'index', '', 1, 0, 0, 1, 0, '', '', 1, 1, 0, 1, 1, 1, 1493894004, 1, 1494512939, 0, 0, 0, 1493894004, 1, '', 0, 0, 0, 0, 0, 0, 0, 1),
-(3, 'document', 'text/html', 'ajax.json', '', '', 'ajax.json', '', 1, 0, 0, 0, 0, '', '[!ajax!]', 0, 0, 1001, 1, 1, 1, 1493894151, 1, 1493894151, 0, 0, 0, 1493894151, 1, '', 0, 0, 0, 0, 0, 0, 1, 1),
-(4, 'document', 'text/html', '404', '', '', '404', '', 1, 0, 0, 0, 0, '', '<p>Страница не найдена!</p>', 1, 2, 1002, 1, 1, 1, 1493894251, 1, 1493894251, 0, 0, 0, 1493894251, 1, '', 0, 0, 0, 0, 0, 0, 1, 1);
+REPLACE INTO `{PREFIX}site_content` (`id`, `type`, `contentType`, `pagetitle`, `longtitle`, `description`, `alias`, `link_attributes`, `published`, `pub_date`, `unpub_date`, `parent`, `isfolder`, `introtext`, `content`, `richtext`, `template`, `menuindex`, `searchable`, `cacheable`, `createdby`, `createdon`, `editedby`, `editedon`, `deleted`, `deletedon`, `deletedby`, `publishedon`, `publishedby`, `menutitle`, `donthit`, `privateweb`, `privatemgr`, `content_dispo`, `hidemenu`, `alias_visible`) VALUES
+(1, 'document', 'text/html', 'Контент', '', '', 'content', '', 1, 0, 0, 0, 1, '', '', 1, 0, 0, 1, 1, 1, 1130304721, 1, 1493893986, 0, 0, 0, 1130304721, 1, '', 0, 0, 0, 0, 1, 0),
+(2, 'document', 'text/html', 'Главная', 'О компании', '', 'index', '', 1, 0, 0, 1, 0, '', '', 1, 1, 0, 1, 1, 1, 1493894004, 1, 1494512939, 0, 0, 0, 1493894004, 1, '', 0, 0, 0, 0, 0, 1),
+(3, 'document', 'text/html', 'ajax.json', '', '', 'ajax.json', '', 1, 0, 0, 0, 0, '', '[!ajax!]', 0, 0, 1001, 1, 1, 1, 1493894151, 1, 1493894151, 0, 0, 0, 1493894151, 1, '', 0, 0, 0, 0, 1, 1),
+(4, 'document', 'text/html', '404', '', '', '404', '', 1, 0, 0, 0, 0, '', '<p>Страница не найдена!</p>', 1, 2, 1002, 1, 1, 1, 1493894251, 1, 1493894251, 0, 0, 0, 1493894251, 1, '', 0, 0, 0, 0, 1, 1);
 
 TRUNCATE TABLE `{PREFIX}site_templates`;
 
