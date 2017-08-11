@@ -40,7 +40,9 @@
 							$this->json['error'] = 'Не могу отправить! - ' . $this->modx->mail->ErrorInfo;
 						}
 						
-						if ( !empty( $this->form['sms'] ) && !empty( $this->modx->getConfig('sms_notify') ) ) {
+						$sms = $this->modx->getConfig( 'sms_notify' );
+						
+						if ( !empty( $this->form['sms'] ) && !empty( $sms ) ) {
 							$this->sms();
 						}
 					}
