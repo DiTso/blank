@@ -25,6 +25,12 @@ REPLACE INTO `{PREFIX}site_tmplvar_templates` VALUES (2, 2, 0);
 
 REPLACE INTO `{PREFIX}site_tmplvar_templates` VALUES (3, 2, 0);
 
+REPLACE INTO `{PREFIX}site_tmplvar_templates` VALUES (1, 3, 0);
+
+REPLACE INTO `{PREFIX}site_tmplvar_templates` VALUES (2, 3, 0);
+
+REPLACE INTO `{PREFIX}site_tmplvar_templates` VALUES (3, 3, 0);
+
 
 UPDATE `{PREFIX}system_settings` SET setting_value = '2' WHERE setting_name = 'site_start';
 
