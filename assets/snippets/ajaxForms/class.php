@@ -20,7 +20,8 @@
 
 					if (!$this->modx->mail) {
 						include_once MODX_MANAGER_PATH . 'includes/extenders/modxmailer.class.inc.php';
-						$this->modx->mail= new MODxMailer;
+						$this->modx->mail = new MODxMailer;
+						$this->modx->mail->init($this->modx);
 					}
 					
 					$this->modx->mail->IsHTML(true);
