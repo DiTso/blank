@@ -8,7 +8,7 @@ body { margin: 0; padding: 0; background: #fff; font: 16px/1.2 Arial, "Helvetica
 body.modal-open { overflow: hidden !important; }
 .modal { text-align: center; }
 .modal:before { display: inline-block; vertical-align: middle; content: " "; height: 100%; }
-.modal .close { position: absolute; right: 0; top: 0; width: 2.5rem; text-align: center; height: 2.5rem; font-size: 2rem; }
+.modal .close { position: absolute; right: 0; top: 0; width: 2.5rem; text-align: center; height: 2.5rem; font-size: 2rem; z-index: 1; }
 .modal .modal-content { border-radius: 0; border: 0; box-shadow: 0 10px 15px -5px rgba(0,0,0,0.3); }
 .modal .modal-dialog { display: inline-block; text-align: left; vertical-align: middle; max-width: 24rem; width: 24rem; }
 .modal .modal-body { margin: 0; padding: 2rem 0; }
