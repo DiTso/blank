@@ -12,6 +12,7 @@ return [
 		'fields' => [
 			'name',
 			'phone' => [ 'rules' => [ 'required' => 'Не указан телефон!', 'phone' => 'Неверный формат номера телефона!' ] ],
+			'page',
 		],
 		'messages' => [
 			[
@@ -21,6 +22,7 @@ return [
 					<table>
 						<tr><td>Имя:&nbsp;</td><td>{name}</td></tr>
 						<tr><td>Телефон:&nbsp;</td><td>{phone}</td></tr>
+						<tr><td>Страница:&nbsp;</td><td>{page}</td></tr>
 					</table>
 				',
 			],
@@ -46,6 +48,7 @@ return [
 				
 				return true;
 			} ] ],
+			'page',
 		],
 		'messages' => [
 			[
@@ -56,6 +59,7 @@ return [
 						<tr><td>Имя:&nbsp;</td><td>{name}</td></tr>
 						<tr><td>Телефон:&nbsp;</td><td>{phone}</td></tr>
 						<tr><td>Email:&nbsp;</td><td>{email}</td></tr>
+						<tr><td>Страница:&nbsp;</td><td>{page}</td></tr>
 					</table>
 				',
 				'beforeSend' => function($modx, $message, $fields, $json) {
