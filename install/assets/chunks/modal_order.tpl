@@ -34,6 +34,7 @@
 					</div>
 					
 					<div class="text-xs-right">
+						<input type="hidden" name="page" value="[*pagetitle*]">
 						<button type="submit" class="btn btn-theme">Отправить</button>
 					</div>
 				</div>
