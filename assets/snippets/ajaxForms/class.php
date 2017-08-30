@@ -28,6 +28,7 @@
 
 					foreach ($this->form['messages'] as $message) {
 						$this->modx->mail->clearAddresses();
+						$this->modx->mail->clearAttachments();
 
 						if (isset($message['beforeTpl'])) {
 							$message['beforeTpl']($this->modx, $message, $this->fields);
