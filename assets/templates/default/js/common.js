@@ -13,8 +13,6 @@
 				return '<span></span>';
 			}
 		} );
-			
-		$('[data-gallery]').fancybox();
 
 		$('.head-menu')
 			.on( 'click', '.show-menu', function( e ) {
