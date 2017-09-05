@@ -36,6 +36,8 @@ UPDATE `{PREFIX}system_settings` SET setting_value = '2' WHERE setting_name = 's
 
 UPDATE `{PREFIX}system_settings` SET setting_value = '4' WHERE setting_name = 'error_page';
 
+UPDATE `{PREFIX}system_settings` SET setting_value = '4' WHERE setting_name = 'unauthorized_page';
+
 UPDATE `{PREFIX}system_settings` SET setting_value = '2' WHERE setting_name = 'default_template';
 
 UPDATE `{PREFIX}system_settings` SET setting_value = 'sibling' WHERE setting_name = 'auto_template_logic';
