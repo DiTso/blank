@@ -30,7 +30,7 @@ return [
 	],
 	2 => [
 		'fields' => [
-			'name'  => [ 'rules' => [ 'required' => 'Не указано имя!' ],
+			'name'  => [ 'rules' => [ 'required' => 'Не указано имя!' ] ],
 			'phone' => [ 'rules' => [ 'required' => 'Не указан телефон!', 'phone' => 'Неверный формат номера телефона!' ] ],
 			'email' => [ 'rules' => [ 'required' => 'Не указан email!', 'email' => 'Неверный формат адреса!' ] ],
 			'file'  => [ 'rules' => [ function( $value, $field ) {
