@@ -1,0 +1,141 @@
+@primary-color: #d30028;
+@primary-color-hover: lighten(@primary-color, 5%);
+@primary-font-size: 16px;
+@primary-font: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font: @primary-font-size/1.2 @primary-font;
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrap {
+    background: #fff;
+    flex: 1 1 auto;
+    overflow: hidden;
+    padding-bottom: 3rem;
+}
+
+.footer {
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    transition: all 0.15s ease;
+    color: @primary-color;
+    text-decoration: underline;
+}
+
+a:focus {
+    color: @primary-color;
+    outline: none !important;
+}
+
+a:hover {
+    color: @primary-color-hover;
+}
+
+@import (less) "_fonts.less";
+@import (less) "_sprites.less";
+@import (less) "_slick.less";
+@import (less) "_forms.less";
+@import (less) "_modals.less";
+
+ul.items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.items > li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.user-content .justifyright {
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+.user-content .justifyleft {
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+
+.wi-group {
+    position: relative;
+    padding-left: 1.7rem;
+}
+
+.wi-group i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 120%;
+}
+
+
+
+
+/* xs, sm, md, lg */
+@media (max-width: 1200px) {
+
+}
+
+/* xs, sm, md */
+@media (max-width: 991px) {
+
+}
+
+/* xs, sm */
+@media (max-width: 767px) {
+
+}
+
+/* xs */
+@media (max-width: 543px) {
+
+}
+
+@media (max-width: 400px) {
+
+}
+
+/* sm, md, lg, xl */
+@media (min-width: 544px) {
+
+}
+
+/* md, lg, xl */
+@media (min-width: 768px) {
+
+}
+
+/* lg, xl */
+@media (min-width: 992px) {
+
+}
+
+/* xl */
+@media (min-width: 1200px) {
+
+}
+
+
+

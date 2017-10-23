@@ -1,0 +1,100 @@
+.form-group {
+    margin: 0 0 1rem;
+    position: relative;
+
+    .form-control {
+        border-radius: 0;
+        border: 1px solid #ccc;
+        background: #fff;
+    }
+
+    &.file-upload {
+        input {
+            display: none;
+        }
+
+        label {
+            cursor: pointer;
+            margin: 0;
+            white-space: nowrap;
+            max-width: 100%;
+            overflow: hidden;
+        }
+    }
+
+    .notice {
+        position: absolute;
+        margin-left: -100%;
+        width: 100%;
+        text-align: right;
+        top: 50%;
+        z-index: 701;
+        pointer-events: none;
+        transition: all 0.3s cubic-bezier(.17,.67,.08,1);
+        transform: translate(-50px,0);
+        opacity: 0;
+
+        > div {
+            line-height: 1;
+            font-size: 11px;
+            color: #fff;
+            background: #c00;
+            padding: 8px;
+            border-radius: 3px;
+            display: inline-block;
+            text-align: left;
+            margin-right: 10px;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                right: -10px;
+                top: 50%;
+                border: 5px solid transparent;
+                border-left-color: #c00;
+                margin-top: -5px;
+            }
+        }
+
+        &.from-top {
+            text-align: left;
+            left: 3px;
+            top: 0;
+            margin-left: 0;
+            transform: translate(0,20px);
+
+            > div:after {
+                border-color: transparent;
+                border-top-color: #c00;
+                margin: 0;
+                right: auto;
+                top: auto;
+                bottom: -10px;
+                left: 10px;
+            }
+        }
+
+        &.animated {
+            transform: none;
+            opacity: 1;
+        }
+    }
+}
+
+.form-content {
+    padding: 2rem;
+
+    .form-title {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+}
+
+.btn {
+    transition: all 0.2s ease;
+    font: @primary-font-size/1.2 @primary-font;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none !important;
+}
