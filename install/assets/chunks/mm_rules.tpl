@@ -13,7 +13,7 @@
 mm_widget_showimagetvs(); // Показываем превью ТВ
 
 mm_createTab( 'SEO', 'SEOTAB' );
-mm_moveFieldsToTab( 'meta_title,meta_keywords,meta_description', 'SEOTAB' );
+mm_moveFieldsToTab( 'meta_title,meta_keywords,meta_description,og_title,og_description,og_image', 'SEOTAB' );
 mm_widget_tags('meta_keywords',',');
 
 //mm_moveFieldsToTab( 'pub_date', 'General', '', '32,39' );
