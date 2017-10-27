@@ -29,9 +29,12 @@
 						<i class="icon-envelope"></i>
 					</div>
 					
-					<div class="text-xs-right">
+					<div class="text-xs-center">
+						<input type="hidden" name="page" value="[*pagetitle*]">
 						<button type="submit" class="btn btn-theme">Отправить</button>
 					</div>
+
+					{{policy_note}}
 				</div>
 			</form>
 		</div>
