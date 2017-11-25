@@ -1,0 +1,6 @@
+{
+    "primary_color": "#d30028",
+    "primary_color_hover": "lighten(@primary_color, 5%)",
+    "primary_font_size": "16px",
+    "primary_font": "Arial, \"Helvetica CY\", \"Nimbus Sans L\", sans-serif"
+}
