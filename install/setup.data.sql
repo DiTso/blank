@@ -35,9 +35,9 @@ REPLACE INTO `{PREFIX}site_tmplvar_templates` VALUES (3, 3, 0);
 
 UPDATE `{PREFIX}system_settings` SET setting_value = '2' WHERE setting_name = 'site_start';
 
-UPDATE `{PREFIX}system_settings` SET setting_value = '4' WHERE setting_name = 'error_page';
+UPDATE `{PREFIX}system_settings` SET setting_value = '5' WHERE setting_name = 'error_page';
 
-UPDATE `{PREFIX}system_settings` SET setting_value = '4' WHERE setting_name = 'unauthorized_page';
+UPDATE `{PREFIX}system_settings` SET setting_value = '5' WHERE setting_name = 'unauthorized_page';
 
 UPDATE `{PREFIX}system_settings` SET setting_value = '2' WHERE setting_name = 'default_template';
 
