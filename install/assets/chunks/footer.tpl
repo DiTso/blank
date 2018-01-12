@@ -31,19 +31,19 @@
 
 						<div class="wi-group phone">
 							<i class="icon-phone"></i>
-							[[splitRows? &in=`[(company_phone)]` &tpl=`phones`]]
+							[[splitRows? &in=`[(client_company_phone)]` &tpl=`phones`]]
 							<a href="#" class="callback" data-toggle="modal" data-target="#callback">Заказать звонок</a>
 						</div>
 
 						<div class="wi-group">
 							<i class="icon-location"></i>
-							[(company_address)]
+							[(client_company_address)]
 						</div>
 
 						<div class="wi-group">
-							<a href="mailto:[(company_email)]">
+							<a href="mailto:[(client_company_email)]">
 								<i class="icon-email"></i>
-								[(company_email)]
+								[(client_company_email)]
 							</a>
 						</div>
 					</div>
@@ -51,7 +51,7 @@
 			</div>
 			
 			<div class="policy text-xs-center">
-				<a href="[[DocInfo? &field=`policy` &docid=`2`]]"></a>
+				<a href="[(client_policy)]">Политика конфиденциальности</a>
 			</div>
 		</div>
 	</div>
