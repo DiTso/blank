@@ -23,7 +23,7 @@ $socials = [
 $out = '';
 
 foreach ( $socials as $social ) {
-	$url = $modx->getConfig( 'social_' . $social['code'] ); 
+	$url = $modx->getConfig( 'client_social_' . $social['code'] ); 
 	
 	if ( !empty( $url ) ) {
 		$out .= $modx->parseText( $tpl, array_merge( $social, [ 'url' => $url ] ) );
