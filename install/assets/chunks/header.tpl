@@ -33,14 +33,14 @@
 						</div>
 
 						<div class="pull-xs-left show-on-top hidden-md-down text">
-							[[nl2br? &in=`[(head_text)]`]]
+							[[nl2br? &in=`[(client_head_text)]`]]
 						</div>
 					</div>
 
 					<div class="pull-xs-right text-xs-right">
 						<div class="wi-group phone">
 							<i class="icon-phone"></i>
-							[[splitRows? &in=`[(company_phone)]` &tpl=`phones`]]
+							[[splitRows? &in=`[(client_company_phone)]` &tpl=`phones`]]
 						</div>
 
 						<a href="#" data-toggle="modal" data-target="#callback" class="btn btn-hollow-theme callback">Заказать звонок</a>
