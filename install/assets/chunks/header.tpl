@@ -29,7 +29,7 @@
 				<div class="container">
 					<div class="pull-xs-left">
 						<div class="logo">
-							<a href="/"><img src="/assets/templates/default/images/logo.png" class="img-fluid"></a>
+							<a href="/"><img src="[(client_company_logo)]" class="img-fluid"></a>
 						</div>
 
 						<div class="pull-xs-left show-on-top hidden-md-down text">
@@ -51,9 +51,7 @@
 			<div class="head-menu">
 				<div class="container">
 					<div class="menu">
-						[[DLMenu? 
-							&config=`menu`
-						]]
+						[[DLMenu? &parents=`1` &maxDepth=`2`]]
 					</div>
 				</div>
 			</div>

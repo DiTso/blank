@@ -24,9 +24,7 @@
 				<div class="col-sm-9">
 					<div class="row">
 						<div class="bottom-menu">
-							[[DLMenu? 
-								&config=`menu`
-							]]
+							[[DLMenu? &parents=`1` &maxDepth=`2`]]
 						</div>
 
 						<div class="wi-group phone">
