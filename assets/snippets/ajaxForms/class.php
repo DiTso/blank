@@ -37,7 +37,7 @@
 						$this->modx->mail->Subject = $this->tpl($message['subject'], $this->fields);
 						$this->modx->mail->Body    = $this->tpl($message['tpl'], $this->fields);
 
-						$emails = isset($message['email']) ? $message['email'] : $this->modx->getConfig('email_recipients');
+						$emails = isset($message['email']) ? $message['email'] : $this->modx->getConfig('client_email_recipients');
 						
 						foreach (explode(',', $emails) as $email) {
 							$this->modx->mail->AddAddress(trim($this->tpl($email, $this->fields)));
@@ -57,7 +57,7 @@
 								$this->json['error'] = 'Не могу отправить! - ' . $this->modx->mail->ErrorInfo;
 							}
 
-							$sms = $this->modx->getConfig('sms_notify');
+							$sms = $this->modx->getConfig('client_sms_notify');
 							
 							if (!empty($message['sms']) && !empty($sms)) {
 								$this->sms();
