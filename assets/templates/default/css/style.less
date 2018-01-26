@@ -36,15 +36,15 @@ a {
     transition: all 0.15s ease;
     color: @primary_color;
     text-decoration: underline;
-}
 
-a:focus {
-    color: @primary_color;
-    outline: none !important;
-}
+    &:focus {
+        color: @primary_color;
+        outline: none !important;
+    }
 
-a:hover {
-    color: @primary_color_hover;
+    &:hover {
+        color: @primary_color_hover;
+    }
 }
 
 @import (less) "_slick.less";
@@ -55,37 +55,43 @@ ul.items {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    > li {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        vertical-align: top;
+    }
 }
 
-ul.items > li {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    vertical-align: top;
-}
+.user-content {
+    .justifyright {
+        float: right;
+        margin: 0 0 1rem 1rem;
+    }
 
-.user-content .justifyright {
-    float: right;
-    margin: 0 0 1rem 1rem;
-}
+    .justifyleft {
+        float: left;
+        margin: 0 1rem 1rem 0;
+    }
 
-.user-content .justifyleft {
-    float: left;
-    margin: 0 1rem 1rem 0;
+    img {
+        max-width: 100%;
+        height: auto !important;
+    }
 }
 
 .wi-group {
     position: relative;
     padding-left: 1.7rem;
-}
 
-.wi-group i {
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 120%;
+    i {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 120%;
+    }
 }
-
 
 
 
