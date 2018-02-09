@@ -21,8 +21,10 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/templates/default/css/style.css">
+	[(client_head_scripts)]
 </head>
 <body class="[[template]]">
+	[(client_body_start_scripts)]
 	<div class="wrap">
 		<div class="head-placeholder">
 			<div class="head">
