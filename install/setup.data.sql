@@ -51,8 +51,8 @@ UPDATE `{PREFIX}system_settings` SET setting_value = 'advlist autolink lists lin
 
 UPDATE `{PREFIX}site_plugins` SET disabled = '0' WHERE name = 'ElementsInTree';
 
-UPDATE `{PREFIX}site_plugins` SET disabled = '0' WHERE name = 'OutdatedExtrasCheck';
-UPDATE `{PREFIX}site_plugins` SET disabled = '0' WHERE name = 'Updater';
+UPDATE `{PREFIX}site_plugins` SET disabled = '1' WHERE name = 'OutdatedExtrasCheck';
+UPDATE `{PREFIX}site_plugins` SET disabled = '1' WHERE name = 'Updater';
 
 
 
