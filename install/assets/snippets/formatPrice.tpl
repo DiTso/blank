@@ -8,8 +8,11 @@
  * @internal    @installset sample
  */
  
-if ( is_numeric( $in ) ) {
-	return number_format( $in, 0, '', ' ' ) . ' р.';
+$in = str_replace(',', '.', $in);
+
+if (is_numeric($in)) {
+    $isFloat = !($in == floor($in));
+    return number_format($in, $isFloat ? 2 : 0, ',', ' ') . ' р.';
 } else {
-	return $in;
+    return $in;
 }
