@@ -10,7 +10,7 @@
 <div class="modal fade" tabindex="-1" role="dialog" id="callback">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<form method="post" action="#" data-id="1" data-goal="zakaz" class="ajax">
+			<form method="post" action="#" data-id="1" data-goal="form:zakaz" class="ajax">
 				<button type="button" class="close icon-cancel" data-dismiss="modal"></button>
 				<div class="modal-title">Заказать<br>обратный звонок</div>
 				<div class="modal-body">
