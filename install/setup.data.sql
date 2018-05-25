@@ -49,6 +49,10 @@ UPDATE `{PREFIX}system_settings` SET setting_value = 'undo redo | cut copy paste
 
 UPDATE `{PREFIX}system_settings` SET setting_value = 'advlist autolink lists link image charmap print preview hr anchor pagebreak searchreplace wordcount visualblocks visualchars code fullscreen spellchecker insertdatetime media nonbreaking save table contextmenu directionality emoticons template paste textcolor codesample colorpicker textpattern imagetools paste modxlink youtube' WHERE setting_name = 'tinymce4_custom_plugins';
 
+UPDATE `{PREFIX}system_settings` SET setting_value = '0' WHERE setting_name = 'global_tabs';
+
+UPDATE `{PREFIX}system_settings` SET setting_value = '1' WHERE setting_name = 'manager_theme_mode';
+
 UPDATE `{PREFIX}site_plugins` SET disabled = '0' WHERE name = 'ElementsInTree';
 
 UPDATE `{PREFIX}site_plugins` SET disabled = '1' WHERE name = 'OutdatedExtrasCheck';
