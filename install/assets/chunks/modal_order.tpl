@@ -28,7 +28,7 @@
 					
 					<div class="form-group file-upload">
 						<label>
-							<input type="file" name="file" onchange="this.nextElementSibling.innerHTML = this.value">
+							<input type="file" name="file" onchange="this.nextElementSibling.innerHTML = this.value.replace(/^.*[\\/]/, '')">
 							<span class="filename">Прикрепить файл</span>
 						</label>
 					</div>
