@@ -5,6 +5,7 @@
  * 
  * @category	chunk
  * @internal    @overwrite true
+ * @internal    @modx_category Формы
  * @internal    @installset sample
  */
 <div class="modal fade" tabindex="-1" role="dialog" id="order">
