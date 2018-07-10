@@ -53,6 +53,8 @@ UPDATE `{PREFIX}system_settings` SET setting_value = '0' WHERE setting_name = 'g
 
 UPDATE `{PREFIX}system_settings` SET setting_value = '1' WHERE setting_name = 'manager_theme_mode';
 
+UPDATE `{PREFIX}system_settings` SET setting_value = 'full' WHERE setting_name = 'tinymce4_theme';
+
 UPDATE `{PREFIX}site_plugins` SET disabled = '0' WHERE name = 'ElementsInTree';
 
 UPDATE `{PREFIX}site_plugins` SET disabled = '1' WHERE name = 'OutdatedExtrasCheck';
