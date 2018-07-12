@@ -142,3 +142,27 @@ $('.modal').on('show.bs.modal', function(e) {
         }
     }
 });
+
+(function() {
+    var currentLayout;
+
+    var layouts = [
+        {breakpoint: 1200, layout: 'xl'},
+        {breakpoint: 991,  layout: 'lg'},
+        {breakpoint: 767,  layout: 'md'},
+        {breakpoint: 543,  layout: 'sm'},
+        {breakpoint: 0,    layout: 'xs'}
+    ];
+
+    $(window).on('resize', function() {
+        for (var i = 0; i < layouts.length; i++) {
+            if (window.innerWidth > layouts[i].breakpoint) {
+                if (layouts[i].layout != currentLayout) {
+                    currentLayout = layouts[i].layout;
+                    $(window).trigger('breakpoint', currentLayout);
+                }
+                break;
+            }
+        }
+    }).resize();
+})();

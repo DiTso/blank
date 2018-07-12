@@ -29,7 +29,7 @@
 
 						<div class="wi-group phone">
 							<i class="icon-phone"></i>
-							[[splitRows? &in=`[(client_company_phone)]` &tpl=`phones`]]
+							[[splitRows? &in=`[(client_company_phone)]` &tpl=`phones_row`]]
 							<a href="#" class="callback" data-toggle="modal" data-target="#callback">Заказать звонок</a>
 						</div>
 
