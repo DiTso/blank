@@ -45,6 +45,8 @@ $(document).on('submit', 'form.ajax', function(e) {
                     var response = xhr.responseJSON;
                 
                     if (response.response == 'fail') {
+                        $form.trigger('failed-submit', response);
+
                         if (response.msg) {
                             $response.find('.modal-body > .response').html(response.msg);
                             $response.modal();

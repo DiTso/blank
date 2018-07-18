@@ -51,7 +51,9 @@ UPDATE `{PREFIX}system_settings` SET setting_value = 'advlist autolink lists lin
 
 UPDATE `{PREFIX}system_settings` SET setting_value = '0' WHERE setting_name = 'global_tabs';
 
-UPDATE `{PREFIX}system_settings` SET setting_value = '1' WHERE setting_name = 'manager_theme_mode';
+UPDATE `{PREFIX}system_settings` SET setting_value = '2' WHERE setting_name = 'manager_theme_mode';
+
+UPDATE `{PREFIX}system_settings` SET setting_value = 'center' WHERE setting_name = 'login_form_position';
 
 UPDATE `{PREFIX}system_settings` SET setting_value = 'full' WHERE setting_name = 'tinymce4_theme';
 
