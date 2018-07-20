@@ -11,7 +11,7 @@
 <div class="modal fade" tabindex="-1" role="dialog" id="callback">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<form method="post" action="#" data-id="1" data-goal="form:zakaz" class="ajax">
+			<form method="post" action="#" data-goal="form:zakaz" class="ajax">
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
 				<div class="modal-title">Заказать<br>обратный звонок</div>
 				<div class="modal-body">
@@ -25,6 +25,7 @@
 					
 					<div class="text-xs-center">
 						<input type="hidden" name="page" value="[*pagetitle*]">
+						<input type="hidden" name="formid" value="callback">
 						<button type="submit" class="btn btn-theme">Отправить</button>
 					</div>
 
