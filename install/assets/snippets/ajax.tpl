@@ -30,6 +30,21 @@ if (!empty($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] == 'POST') 
             'apiFormat'         => 'raw',
             'saveObject'        => '_FormLister',
             'parseMailerParams' => 1,
+            'prepareProcess'    => [
+                function($modx, $data, $fl, $name) {
+                    if (isset($data['pid']) && is_numeric($data['pid'])) {
+                        $fl->setField('page', $modx->runSnippet('DLCrumbs', [
+                            'id'           => $data['pid'],
+                            'hideMain'     => 1,
+                            'showCurrent'  => 1,
+                            'addWhereList' => 'c.id != 1',
+                            'tpl'          => '@CODE:[+title+] -&nbsp;',
+                            'tplLast'      => '@CODE:[+title+]',
+                            'ownerTPL'     => '@CODE:[+crumbs.wrap+]',
+                        ]));
+                    }
+                },
+            ],
         ], include $config);
 
         $data = $modx->runSnippet('FormLister', $params);

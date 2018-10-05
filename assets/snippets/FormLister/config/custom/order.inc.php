@@ -24,6 +24,9 @@ return [
             'required' => 'Введите email',
             'email'    => 'Формат адреса неверный',
         ],
+        'agree' => [
+            'required' => 'Отметьте согласие',
+        ],
     ],
     'attachments' => 'file',
     'fileRules' => [
@@ -60,6 +63,7 @@ return [
             <tr><td>Имя:&nbsp;</td><td>[+name.value+]</td></tr>
             <tr><td>Телефон:&nbsp;</td><td>[+phone.value+]</td></tr>
             <tr><td>Email:&nbsp;</td><td>[+email.value+]</td></tr>
+            <tr><td>Страница:&nbsp;</td><td>[+page.value+]</td></tr>
         </table>
     ',
 ];

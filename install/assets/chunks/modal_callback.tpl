@@ -24,7 +24,7 @@
 					</div>
 					
 					<div class="text-xs-center">
-						<input type="hidden" name="page" value="[*pagetitle*]">
+						<input type="hidden" name="pid" value="[*id*]">
 						<input type="hidden" name="formid" value="callback">
 						<button type="submit" class="btn btn-theme">Отправить</button>
 					</div>
