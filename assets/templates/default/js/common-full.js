@@ -165,7 +165,7 @@
         {breakpoint: 1200, layout: 'xl'},
         {breakpoint: 991,  layout: 'lg'},
         {breakpoint: 767,  layout: 'md'},
-        {breakpoint: 543,  layout: 'sm'},
+        {breakpoint: 575,  layout: 'sm'},
         {breakpoint: 0,    layout: 'xs'}
     ];
 
