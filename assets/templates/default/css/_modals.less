@@ -33,7 +33,7 @@ body.modal-open {
         display: inline-block;
         text-align: left;
         vertical-align: middle;
-        max-width: 24rem;
+        max-width: ~"calc(100vw - 50px)";
         width: 24rem;
     }
 
@@ -67,13 +67,9 @@ body.modal-open {
     }
 
 
-    @media (max-width: 543px) {
+    @media (max-width: 575px) {
         &:before {
             vertical-align: top;
-        }
-
-        .modal-dialog {
-            max-width: 90%;
         }
     }
 }
