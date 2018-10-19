@@ -19,6 +19,7 @@
 // @todo: clean plugins for mini
 
 // $this->set('plugins', 'advlist autolink lists modxlink image charmap print preview hr anchor pagebreak searchreplace wordcount visualblocks visualchars code fullscreen spellchecker insertdatetime media nonbreaking save table contextmenu directionality emoticons template paste textcolor codesample colorpicker textpattern imagetools paste youtube', 'string');
+$this->set('plugins', 'anchor autolink lists spellchecker pagebreak layer table save hr modxlink image imagetools emoticons insertdatetime preview media searchreplace print code contextmenu paste directionality fullscreen noneditable visualchars textcolor nonbreaking template youtube autosave advlist visualblocks charmap wordcount codesample', 'string');
 $this->set('toolbar1', 'bold italic underline strikethrough | alignleft aligncenter alignright | link unlink | undo redo | bullist numlist | outdent indent | removeformat code', 'string');
 $this->set('toolbar2', NULL);
 $this->set('toolbar3', NULL);
